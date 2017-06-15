@@ -1,0 +1,55 @@
+@I [LIC-101] Checked out feature [VIVADO_HLS]
+@I [HLS-10] Running 'C:/Xilinx/Vivado_HLS/2014.1/bin/unwrapped/win64.o/vivado_hls.exe'
+            for user 'Alireza' on host 'wes-server' (Windows NT_amd64 version 6.1) on Wed Nov 25 15:47:46 -0800 2015
+            in directory 'C:/Users/Alireza/Desktop/237C_Fall2015/final/FIR'
+@I [HLS-10] Opening project 'C:/Users/Alireza/Desktop/237C_Fall2015/final/FIR/FIR'.
+@I [HLS-10] Adding design file 'fir.h' to the project
+@I [HLS-10] Adding design file 'fir.cpp' to the project
+@I [HLS-10] Adding test bench file 'fir_test.cpp' to the project
+@I [HLS-10] Adding test bench file 'fir_out.txt' to the project
+@I [HLS-10] Adding test bench file 'fir_in.txt' to the project
+@I [HLS-10] Opening solution 'C:/Users/Alireza/Desktop/237C_Fall2015/final/FIR/FIR/solution1'.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-10] Setting target device to 'xc7z020clg484-1'
+@I [HLS-10] Analyzing design file 'fir.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [HLS-10] Checking synthesizability ...
+@I [HLS-111] Elapsed time: 7.459 seconds; current memory usage: 48 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'fir' ...
+@W [RTGEN-101] Legalizing port name 'fir/input' to 'fir/input_r'.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'fir' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.162 seconds; current memory usage: 49.1 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'fir' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.13 seconds; current memory usage: 49.2 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'fir' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'fir/result' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on port 'fir/input_r' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'fir/do_filter' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on function 'fir' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Generating core module 'fir_fadd_32ns_32ns_32_5_full_dsp': 1 instance(s).
+@I [RTGEN-100] Generating core module 'fir_fmul_32ns_32ns_32_4_max_dsp': 1 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'fir'.
+@I [HLS-111] Elapsed time: 0.119 seconds; current memory usage: 49.1 MB.
+@I [RTMG-278] Implementing memory 'fir_shift_ram' using block RAMs with power-on initialization.
+@I [RTMG-279] Implementing memory 'fir_taps_rom' using auto ROMs.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'fir'.
+@I [WVHDL-304] Generating RTL VHDL for 'fir'.
+@I [WVLOG-307] Generating RTL Verilog for 'fir'.
+@I [HLS-112] Total elapsed time: 9.678 seconds; peak memory usage: 49.2 MB.
+@I [LIC-101] Checked in feature [VIVADO_HLS]

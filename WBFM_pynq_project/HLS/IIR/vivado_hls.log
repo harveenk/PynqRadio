@@ -1,0 +1,56 @@
+@I [LIC-101] Checked out feature [VIVADO_HLS]
+@I [HLS-10] Running 'C:/Xilinx/Vivado_HLS/2014.1/bin/unwrapped/win64.o/vivado_hls.exe'
+            for user 'Alireza' on host 'wes-server' (Windows NT_amd64 version 6.1) on Wed Nov 25 15:50:00 -0800 2015
+            in directory 'C:/Users/Alireza/Desktop/237C_Fall2015/final/IIR'
+@I [HLS-10] Opening project 'C:/Users/Alireza/Desktop/237C_Fall2015/final/IIR/IIR'.
+@I [HLS-10] Adding design file 'iir.h' to the project
+@I [HLS-10] Adding design file 'iir.cpp' to the project
+@I [HLS-10] Adding test bench file 'iir_test.cpp' to the project
+@I [HLS-10] Adding test bench file 'iir_out.dat' to the project
+@I [HLS-10] Adding test bench file 'iir_in.dat' to the project
+@I [HLS-10] Opening solution 'C:/Users/Alireza/Desktop/237C_Fall2015/final/IIR/IIR/solution1'.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-10] Setting target device to 'xc7z020clg484-1'
+@I [HLS-10] Analyzing design file 'iir.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [HLS-10] Checking synthesizability ...
+@I [HLS-111] Elapsed time: 7.001 seconds; current memory usage: 47.3 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'iir' ...
+@W [RTGEN-101] Legalizing port name 'iir/input' to 'iir/input_r'.
+@W [RTGEN-101] Legalizing port name 'iir/output' to 'iir/output_r'.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'iir' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.105 seconds; current memory usage: 48 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'iir' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.127 seconds; current memory usage: 48 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'iir' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'iir/input_r' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'iir/output_r' to 'ap_vld'.
+@I [RTGEN-500] Setting interface mode on port 'iir/size' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on function 'iir' to 'ap_ctrl_hs'.
+@W [RTGEN-101] Port 'iir/size' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@I [RTGEN-100] Generating core module 'iir_fadd_32ns_32ns_32_5_full_dsp': 1 instance(s).
+@I [RTGEN-100] Generating core module 'iir_fmul_32ns_32ns_32_4_max_dsp': 2 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'iir'.
+@I [HLS-111] Elapsed time: 0.101 seconds; current memory usage: 48 MB.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'iir'.
+@I [WVHDL-304] Generating RTL VHDL for 'iir'.
+@I [WVLOG-307] Generating RTL Verilog for 'iir'.
+@I [HLS-112] Total elapsed time: 8.964 seconds; peak memory usage: 48 MB.
+@I [LIC-101] Checked in feature [VIVADO_HLS]

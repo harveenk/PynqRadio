@@ -1,0 +1,104 @@
+@I [LIC-101] Checked out feature [VIVADO_HLS]
+@I [HLS-10] Running 'C:/Xilinx/Vivado_HLS/2014.1/bin/unwrapped/win64.o/vivado_hls.exe'
+            for user 'Alireza' on host 'wes-server' (Windows NT_amd64 version 6.1) on Wed Nov 25 16:01:03 -0800 2015
+            in directory 'C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN'
+@I [HLS-10] Opening project 'C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN'.
+@I [HLS-10] Adding design file 'atan.h' to the project
+@I [HLS-10] Adding design file 'atan.cpp' to the project
+@I [HLS-10] Adding test bench file 'atan_test.cpp' to the project
+@I [HLS-10] Adding test bench file 'atan_real.txt' to the project
+@I [HLS-10] Adding test bench file 'atan_out.txt' to the project
+@I [HLS-10] Adding test bench file 'atan_imag.txt' to the project
+@I [HLS-10] Opening solution 'C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN/solution1'.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-10] Setting target device to 'xc7z020clg484-1'
+@I [HLS-10] Analyzing design file 'atan.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [XFORM-603] Inlining function 'ap_fixed_base<78, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator<<' into 'hls::cast_IEEE754<int, float>' (r:/scratch/builds/2014.1/continuous/20140404125757/src/products/hls/hls_lib/src/hls/hls_round.h:371).
+@I [XFORM-603] Inlining function 'ap_fixed_base<1, 33, false, (ap_q_mode)5, (ap_o_mode)0, 0>::overflow_adjust' into 'ap_fixed_base<1, 33, false, (ap_q_mode)5, (ap_o_mode)0, 0>::ap_fixed_base<55, 55, false, (ap_q_mode)5, (ap_o_mode)3, 0>' ().
+@I [HLS-10] Checking synthesizability ...
+@I [XFORM-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (r:/scratch/builds/2014.1/continuous/20140404125757/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:345) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (r:/scratch/builds/2014.1/continuous/20140404125757/src/products/hls/hls_lib/src/hls/utils/x_hls_utils.h:366) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::to_ieee' into 'hls::copysignf' (r:/scratch/builds/2014.1/continuous/20140404125757/src/products/hls/hls_lib/src/hls_math.h:262) automatically.
+@I [XFORM-602] Inlining function 'hls::copysignf' into 'hls::fabsf' (r:/scratch/builds/2014.1/continuous/20140404125757/src/products/hls/hls_lib/src/hls_math.h:282) automatically.
+@I [XFORM-602] Inlining function 'hls::fabsf' into 'fabsf' (r:/scratch/builds/2014.1/continuous/20140404125757/src/products/hls/hls_lib/src/lib_hlsm.cpp:130) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::mantissa' into 'hls::cast_IEEE754<int, float>' (r:/scratch/builds/2014.1/continuous/20140404125757/src/products/hls/hls_lib/src/hls/hls_round.h:368) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::expv' into 'hls::cast_IEEE754<int, float>' (r:/scratch/builds/2014.1/continuous/20140404125757/src/products/hls/hls_lib/src/hls/hls_round.h:371) automatically.
+@I [XFORM-602] Inlining function 'fp_struct<float>::__signbit' into 'hls::cast_IEEE754<int, float>' (r:/scratch/builds/2014.1/continuous/20140404125757/src/products/hls/hls_lib/src/hls/hls_round.h:383) automatically.
+@I [XFORM-602] Inlining function 'hls::cast_IEEE754<int, float>' into '__hls_fptosi_float_i32' (r:/scratch/builds/2014.1/continuous/20140404125757/src/products/hls/hls_lib/src/lib_floatconversion.cpp:39) automatically.
+@I [XFORM-602] Inlining function 'fabsf' into 'fast_atan' (atan.cpp:127) automatically.
+@I [XFORM-602] Inlining function '__hls_fptosi_float_i32' into 'fast_atan' (atan.cpp:149) automatically.
+@I [XFORM-401] Performing if-conversion on hyperblock from (atan.cpp:145:5) to (atan.cpp:159:5) in function 'fast_atan'... converting 6 basic blocks.
+@I [HLS-111] Elapsed time: 47.637 seconds; current memory usage: 470 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'fast_atan' ...
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'fast_atan' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.463 seconds; current memory usage: 470 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'fast_atan' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.518 seconds; current memory usage: 471 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'fast_atan' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'fast_atan/x' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'fast_atan/y' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on function 'fast_atan' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Generating core module 'fast_atan_dcmp_64ns_64ns_1_3': 1 instance(s).
+@I [RTGEN-100] Generating core module 'fast_atan_faddfsub_32ns_32ns_32_5_full_dsp': 1 instance(s).
+@I [RTGEN-100] Generating core module 'fast_atan_fcmp_32ns_32ns_1_3': 2 instance(s).
+@I [RTGEN-100] Generating core module 'fast_atan_fdiv_32ns_32ns_32_16': 1 instance(s).
+@I [RTGEN-100] Generating core module 'fast_atan_fmul_32ns_32ns_32_4_max_dsp': 1 instance(s).
+@I [RTGEN-100] Generating core module 'fast_atan_fpext_32ns_64_3': 1 instance(s).
+@I [RTGEN-100] Generating core module 'fast_atan_fsub_32ns_32ns_32_5_full_dsp': 1 instance(s).
+@I [RTGEN-100] Generating core module 'fast_atan_sitofp_32ns_32_6': 1 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'fast_atan'.
+@I [HLS-111] Elapsed time: 0.451 seconds; current memory usage: 471 MB.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@W [HLS-40] C:/Users/Alireza/Desktop/237C_Fall2015/final/ATAN/ATAN and r:/scratch/builds/2014.1/continuous/20140404125757/src/products are not the same volume, so there is no relative path.
+@I [RTMG-279] Implementing memory 'fast_atan_fast_atan_table_rom' using auto ROMs.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'fast_atan'.
+@I [WVHDL-304] Generating RTL VHDL for 'fast_atan'.
+@I [WVLOG-307] Generating RTL Verilog for 'fast_atan'.
+@I [HLS-112] Total elapsed time: 51.861 seconds; peak memory usage: 471 MB.
+@I [LIC-101] Checked in feature [VIVADO_HLS]
